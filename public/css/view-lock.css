@@ -1,0 +1,151 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box; }
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-size-adjust: none; }
+
+body {
+    min-width: 320px;
+    background: #f2f3f5;
+    color: #2b333e;
+}
+
+img,
+iframe,
+video,
+audio,
+object {
+    max-width: 100%; }
+
+img,
+iframe {
+    border: 0 none; }
+
+
+.badge img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle; }
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.map {
+    height: 250px;
+}
+
+
+.wrapper {
+    padding: 100px 30px 50px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 900px) {
+    .column {
+        width: 100%;
+        float: none;
+        padding: 10px 0px 10px;
+    }
+    .wrapper {
+        padding: 0px 0px 10px;
+    }
+}
+
+
+
+
+/* Badges Section */
+
+.badge{
+    width: 100%;
+    padding: 20px 0px 10px;
+    height: 85px;
+}
+
+/* Lock Details Section */
+.lock-details {
+    padding: 20px 20px 10px;
+}
+
+.lock-details .map-image {
+    padding: 20px 0px 10px;
+}
+
+.lock-details .map-image img{
+
+}
+
+.lock-details .lock-details-text {
+    padding: 5px 0px 5px;
+    font-size: 1.2em;
+}
+
+.lock-details .lock-details-text-row {
+    padding: 5px 0px 5px;
+    height: 50px;
+}
+
+.lock-details .lock-details-text-row div{
+    display: inline;
+}
+
+.lock-details .lock-details-text-row .field-label {
+    float: left;
+    font-weight: bold;
+}
+
+.lock-details .lock-details-text-row .field-value {
+    float: right;
+}
+
